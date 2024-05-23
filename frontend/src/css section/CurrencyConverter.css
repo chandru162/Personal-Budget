@@ -1,0 +1,21 @@
+.currency-converter {
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 300px;
+}
+
+.currency-converter label {
+    margin-bottom: 5px;
+    display: block;
+}
+
+.currency-converter input,
+.currency-converter select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+.currency-converter .converted-amount {
+    margin-top: 10px;
+}

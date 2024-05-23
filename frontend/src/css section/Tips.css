@@ -1,0 +1,36 @@
+.referenced-books {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+    top: 100px;
+}
+
+.referenced-books h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.book {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.book-image {
+    width: 100px;
+    height: 150px;
+    margin-right: 20px;
+}
+
+.book-details {
+    flex-grow: 1;
+}
+
+.book-details h3 {
+    margin: 0 0 10px;
+}
+
+.book-details p {
+    margin: 0;
+}

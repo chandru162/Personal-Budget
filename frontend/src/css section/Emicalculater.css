@@ -1,0 +1,28 @@
+.emi-calculator {
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 300px;
+}
+
+.emi-calculator label {
+    margin-bottom: 5px;
+    display: block;
+}
+
+.emi-calculator input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+.emi-calculator button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.emi-calculator .emi-result {
+    margin-top: 10px;
+}
