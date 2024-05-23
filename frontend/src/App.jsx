@@ -1,8 +1,10 @@
 
 import { Route, Routes } from 'react-router-dom'
+import Login from './component/Login';
+import Navbar from './component/Navbar';
 import './App.css'
-import Login from './component/Login'
-import Navbar from './component/Navbar'
+// import Login from './component/Login'
+// import Navbar from './component/Navbar'
 import Signin from './component/Signin'
 import Home from './component/Home'
 import About from './component/About'
@@ -15,7 +17,7 @@ import Footer from './component/Footer'
 function App() {
 
   return (
-    <div className='container'>
+    <div className='container-fluid' >
   <Navbar></Navbar>
   
      <Routes>
@@ -28,7 +30,7 @@ function App() {
         <Route path="/log-in" element={<Login></Login>}></Route>
         <Route path="/sign-in" element={<Signin></Signin>}></Route>
      </Routes>
-    {/* <Footer></Footer> */}
+    <Footer></Footer>
     </div>
   )
 }

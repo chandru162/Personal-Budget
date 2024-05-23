@@ -7,7 +7,7 @@ export default function Login() {
           <form className="signup-form" >
               <h2>Log In</h2>
               <br />
-              <h1>Welcome Back!</h1>
+              <h6>Welcome Back!</h6>
               <div className="form-group">
                 
                   <label htmlFor="email">Email:</label>

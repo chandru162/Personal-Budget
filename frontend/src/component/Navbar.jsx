@@ -4,11 +4,11 @@ import DesignerLogo from '../assets/images/Designer.png';
 
 export default function Navbar() {
     return (
-        <div className='nav-div'>
-            <nav className="navbar navbar-expand-lg ">
+        <div className='nav-div container-fluid' style={{marginRight:"20px"}}>
+            <nav className="navbar navbar-expand-lg">
                 <div className="container-fluid">
-                    <Link className="navbar-brand" to="/">
-                        <img src={DesignerLogo} alt="Designer Logo" width="50px" height="50px" style={{borderRadius:"50%"}} />
+                    <Link className="navbar-brand" to="/about">
+                        <img src={DesignerLogo} alt="Designer Logo" width="50px" height="50px" style={{borderRadius:"50%",boxShadow:"1px 1px 6px black"}} />
                     </Link>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
