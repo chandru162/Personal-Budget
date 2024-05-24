@@ -17,8 +17,8 @@ export default function About() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Logic to send email goes here, possibly using an email service API
     console.log('Form submitted:', formData);
+    alert("Send Successfully !")
   };
 
   return (
