@@ -1,8 +1,12 @@
 import { NavLink, Link } from 'react-router-dom';
 import '../css section/Navbar.css';
 import DesignerLogo from '../assets/images/Designer.png'; 
+// import auth from '../component/Auth'
+
+import { useAuth } from "./Auth";
 
 export default function Navbar() {
+    const auth=useAuth()
     return (
         <div className='nav-div container-fluid' style={{marginRight:"20px"}}>
             <nav className="navbar navbar-expand-lg">
@@ -20,9 +24,14 @@ export default function Navbar() {
                             <NavLink className="nav-link" to="/income-managment">Managment</NavLink>
                             <NavLink className="nav-link" to="/calculater">calculater</NavLink>
                             <NavLink className="nav-link" to="/tips">Tips&Triks</NavLink>
-                            <NavLink className="nav-link" to="/profile">Profile</NavLink>
-                            <NavLink className="nav-link" to="/log-in">log-in</NavLink>
-                            <NavLink className="nav-link" to="/sign-in">sign-in</NavLink>
+
+                            {/* <NavLink className="nav-link" to="/profile">Profile</NavLink> */}
+                            {/* <NavLink className="nav-link" to="/log-in">login</NavLink> */}
+                            {/* <NavLink className="nav-link" to="/sign-in">signin</NavLink> */}
+
+                            {auth.user && (<NavLink className="nav-link" to={"/profile"}>Profile</NavLink>)}
+                            {!auth.user && (<NavLink className="nav-link" to={"/log-in"}>Login</NavLink>)}
+                            {!auth.user && (<NavLink className="nav-link" to={"/sign-in"}>sign in</NavLink>)} 
                         </div>
                     </div>
                 </div>

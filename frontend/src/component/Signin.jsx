@@ -82,7 +82,7 @@ const Signin = () => {
                         required
                     />
                 </div>
-                <button type="submit">Sign Up Now</button>
+                <button type="submit">Sign in Now</button>
             </form>
         </div>
     );

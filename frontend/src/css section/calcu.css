@@ -1,6 +1,8 @@
 #calcu-parant{
     display: flex;
+    flex-direction: row;
     position: relative;
     top: 100px;
     gap: 10px;
+    left: 60%;
 }

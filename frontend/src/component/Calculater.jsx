@@ -1,20 +1,14 @@
-import React,{ useState } from 'react'
-import '../css section/calcu.css'
+import React from 'react';
+import { Link } from 'react-router-dom'; 
+import '../css section/calcu.css';
 
 export default function Calculater() {
-
-
-     
-
-
   return (
     <div id='calcu-parant'>
-      <a href=""><button>ordinary calculater</button></a>
-      <a href=""><button>EMI Calculater</button></a>
-      <a href=""><button>Curency converter</button></a>
-      <div>
-        
-      </div>
+      <Link to={"/ordinary-calculator"}><button>Ordinary Calculator</button></Link> 
+      <Link to={"/emi-calculator"}><button>EMI Calculator</button></Link>
+      <Link to={"/currency-converter"}><button>Currency Converter</button></Link>
+
     </div>
-  )
+  );
 }

@@ -2,6 +2,9 @@
     border: 1px solid #ccc;
     padding: 20px;
     width: 300px;
+    position: relative;
+    top: 100px;
+    left: 39%;
 }
 
 .emi-calculator label {

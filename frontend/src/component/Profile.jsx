@@ -1,8 +1,16 @@
-import profileImage from '../assets/images/homeimg1.jpg'; // Import the profile image
+import profileImage from '../assets/images/homeimg1.jpg'; 
 import '../css section/Profile.css';
+import { NavLink, Navigate, useNavigate } from 'react-router-dom'
+import { useAuth } from './Auth'
 
-export default function Profile() {
-  // Sample user data (replace with actual user data fetched from backend)
+  
+
+
+export default function Profile(props) {
+  const Auth=useAuth()
+
+  const Navigate=useNavigate()
+
   const user = {
     name: 'John Doe',
     email: 'john@example.com',
@@ -13,24 +21,32 @@ export default function Profile() {
     }
   };
 
+
+
+  const handlelogout=()=>{
+    Auth.logout()
+    alert("log out sucsesfully !")
+    Navigate("/")
+  }
+
   return (
     <div className="profile-container">
       <div className="profile-content">
         <div className="profile-header">
           <img src={profileImage} alt="Profile" className="profile-image" />
           <div className="profile-info">
-            <h1>{user.name}</h1>
-            <p>Email: {user.email}</p>
+          <h3>Welcome "{Auth.user}"</h3>
+          {/* <p>Email: {Auth.email}</p> */}
           </div>
         </div>
         <div className="budget-details">
           <h2>Budget Details</h2>
-          <p>Income: ${user.budget.income}</p>
-          <p>Expenses: ${user.budget.expenses}</p>
-          <p>Savings: ${user.budget.savings}</p>
+          <p>Income: R.s{user.budget.income}</p>
+          <p>Expenses: R.s{user.budget.expenses}</p>
+          <p>Savings: R.s{user.budget.savings}</p>
         </div>
       </div>
-      <button style={{backgroundColor:"red"}}>Log Out</button>
+      <button style={{backgroundColor:"red"}} onClick={handlelogout}>Log Out</button>
     </div>
   );
 }

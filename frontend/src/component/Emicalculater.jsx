@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-// import './EMICalculator.css';
+import '../css section/Emicalculater.css';
+import Calculater from './Calculater';
 
 const EmiCalculator = () => {
   const [principal, setPrincipal] = useState('');
@@ -17,6 +18,8 @@ const EmiCalculator = () => {
   };
 
   return (
+    <>
+    <Calculater></Calculater>
     <div className="emi-calculator">
       <h2>EMI Calculator</h2>
       <div>
@@ -32,8 +35,9 @@ const EmiCalculator = () => {
         <input type="number" value={tenure} onChange={(e) => setTenure(e.target.value)} />
       </div>
       <button onClick={calculateEMI}>Calculate EMI</button>
-      {emi && <div className="emi-result">EMI: ${emi}</div>}
+      {emi && <div className="emi-result">EMI: R.S {emi}</div>}
     </div>
+    </>
   );
 };
 

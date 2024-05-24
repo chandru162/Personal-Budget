@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
-// import './CurrencyConverter.css';
+import '../css section/CurrencyConverter.css';
+import Calculater from '../component/Calculater'
 
 const CurrencyConverter = () => {
     const [amount, setAmount] = useState('');
@@ -19,7 +20,10 @@ const CurrencyConverter = () => {
     }, [amount, baseCurrency, targetCurrency]);
 
     return (
+        <>
+        <Calculater/>
         <div className="currency-converter">
+
             <h2>Currency Converter</h2>
             <div>
                 <label>Amount ({baseCurrency}):</label>
@@ -43,6 +47,7 @@ const CurrencyConverter = () => {
             </div>
             {convertedAmount && <div className="converted-amount">Converted Amount: {convertedAmount}</div>}
         </div>
+        </>
     );
 };
 
