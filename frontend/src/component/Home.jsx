@@ -37,7 +37,7 @@ export default function Home() {
           <div className="card-body">
             <h5 className="card-title">This is your Personal Budget</h5>
             <p className="card-text">"Take control of your finances with our intuitive personal budget tools. Easily track expenses, set goals, and achieve financial peace of mind."</p>
-            <a href="/income-managment" className="btn btn-primary">Let's Start</a>
+            <a href="/log-in" className="btn btn-primary">Let's Start</a>
           </div>
         </div>
       </div>

@@ -1,4 +1,5 @@
 import React from 'react'
+import { useState } from 'react';
 import '../css section/Managment.css'
 
 export default function Managment() {
@@ -22,7 +23,7 @@ export default function Managment() {
 
   return (
     <div className="todo-container">
-      <h1>Personal Budget Todo List</h1>
+      <h1>Personal Budget List</h1>
       <div className="input-container">
         <input
           type="text"

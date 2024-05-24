@@ -22,7 +22,7 @@ export default function Ocalculater() {
       <button className="cal-btn"onClick={()=>{setinput(input+'7')}}>7</button>
       <button className="cal-btn"onClick={()=>{setinput(input+'8')}}>8</button>
       <button className="cal-btn"onClick={()=>{setinput(input+'9')}}>9</button>
-      <button className="cal-btn"onClick={() => { setinput('') }}>c</button>
+      <button className="cal-btn"onClick={() => { setinput('') }}>C</button>
       
       <br />
       <button className="cal-btn"onClick={()=>{setinput(input+'4')}}>4</button>

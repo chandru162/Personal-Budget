@@ -1,31 +1,49 @@
 .emi-calculator {
-    border: 1px solid #ccc;
+    border: 2px solid #007bff;
+    border-radius: 10px;
     padding: 20px;
     width: 300px;
     position: relative;
     top: 100px;
-    left: 39%;
+    left: 50%; 
+    transform: translateX(-50%);
+    background-color: #f9f9f9; 
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); 
 }
 
 .emi-calculator label {
-    margin-bottom: 5px;
+    margin-bottom: 8px; 
     display: block;
+    font-weight: bold; 
 }
 
 .emi-calculator input {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 10px;
+    width: calc(100% - 16px); 
+    padding: 10px;
+    margin-bottom: 12px; 
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box; 
 }
 
 .emi-calculator button {
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
+    width: 100%; 
+    padding: 10px;
+    background-color: #007bff; 
+    color: #fff; 
     border: none;
+    border-radius: 5px;
     cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.emi-calculator button:hover {
+    background-color: #0056b3; 
 }
 
 .emi-calculator .emi-result {
-    margin-top: 10px;
+    margin-top: 15px; 
+    font-size: 18px; 
 }
