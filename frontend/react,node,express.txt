@@ -1,0 +1,78 @@
+React js Topics--------------
+
+*React js introduction
+*react js folder structure
+*what is components
+*class and functional component
+*JSX
+*Props(all types)
+*State
+*Destructuring props and state
+*About hooks
+*Event handling
+*Conditional rendering
+*list rendering
+*use of keys
+*Styling in react
+*Form handling in react
+*Lifecycle methods in react
+*UseEffect
+*Fragments
+*React portals
+*Error boundary
+*Higher order component
+*Render props
+*Context Api or Use context
+*axios and http requests
+*useRef
+*useReducer
+*useCallback
+*useMemo
+*custom Hooks
+===========================================================================================
+Node js Topics--------------
+
+*Node introduction
+*about Ecma script
+*javascript runtime environment and v8 engine
+*node js modules
+*local modules
+*module caching
+*module scope
+*iife
+*module wrapper
+*Different types of import and export
+*Different types of import and exports in ES modules
+*importing json
+*Built-in module
+*event,fs,path,http and streams
+*what is callback,what is asynchronous javascript
+*what is pipes
+*HTTP modules creating server and respond with plain text, json or HTML,
+*HTTP routing
+*what is npm
+*third party modules(all concepts inside third party modules)
+*Event loop
+*microtask queues
+*timer queues
+=============================================================================
+Express js and mongodb-----------------------
+
+*how to create a server
+*what is express
+*what is body-parser
+*what is mongoose
+*how to create env variable with dotenv
+*what is the use of env
+*how to connect mongoose with express
+*how to create routes in express
+*how to make wild card or no match routes
+*how to create dynamic routes
+*what is req.params and req.body
+*what is cors
+*what is nodemailer
+*what is what is uuid why it is used for?
+*what is bcryptjs
+*mongodb basic queries
+*about crud
+*how to perform crud
