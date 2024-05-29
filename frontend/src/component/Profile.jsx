@@ -36,7 +36,7 @@ export default function Profile(props) {
           <img src={profileImage} alt="Profile" className="profile-image" />
           <div className="profile-info">
           <h3>Welcome "{Auth.user}"</h3>
-          {/* <p>Email: {Auth.email}</p> */}
+          <p>Email: {Auth.email}</p>
           </div>
         </div>
         <div className="budget-details">

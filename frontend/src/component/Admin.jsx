@@ -2,6 +2,8 @@ import React from 'react'
 
 export default function Admin() {
   return (
-    <div>Admin</div>
+    <div>
+      <div className="user-cards"></div>
+    </div>
   )
 }

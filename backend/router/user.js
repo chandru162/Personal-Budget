@@ -53,6 +53,14 @@ router.get('/get/:email',(req,res)=>{
     usermodel.find({email:req.params.email})
     .then(response=>res.send(response))
     .catch(err=>console.log(err))
+    
 })
+
+router.get('/get', (req, res) => {
+    console.log(req.body);
+    usermodel.find()
+        .then(users => res.send(users))
+        .catch(err => console.log(err));
+});
 
 module.exports = router;
