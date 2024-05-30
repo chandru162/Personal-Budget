@@ -10,11 +10,16 @@ export default function Adminpage() {
             .then(res => setlist(res.data))
             .catch(err => console.log(err));
     },[]);
-        console.log(typeof list);
+        console.log( list);
 
-    const handledelete =()=>{
-        Axios.delete(`http://localhost:3005/userdetails/get,${id}`)
+    const handledelete = (email)=>{
+        Axios.delete(`http://localhost:3005/userdetails/delete/${email}`)
+        .then(res=>console.log(res))
+        .catch(err=>console.log(err))
     }
+    
+
+
     return (
         <div>
             <div className="user-cards">
@@ -23,7 +28,7 @@ export default function Adminpage() {
                         <p>Name : {x.name}</p>
                         <p>Email : {x.email}</p>
                         <p>Password: {x.password}</p>
-                        <button>Remove</button>
+                        <button id='remove-btn' onClick={()=>handledelete(x.email)}>Remove</button>
                     </div>
                 ))}
             </div>

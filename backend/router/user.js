@@ -39,7 +39,7 @@ router.post('/post', (req, res) => {
     const newuser = new usermodel(req.body);
     newuser.save()
         .then(response => {
-            console.log(response);
+            // console.log(response);
             res.send("User has been posted successfully");
         })
         .catch(err => {
@@ -57,10 +57,17 @@ router.get('/get/:email',(req,res)=>{
 })
 
 router.get('/get', (req, res) => {
-    console.log(req.body);
+    // console.log(req.body);
     usermodel.find()
         .then(users => res.send(users))
         .catch(err => console.log(err));
 });
 
+router.delete('/delete/:email',(req,res)=>{
+    // console.log(req.params.email)
+    usermodel.findOne({email})
+    .then(response=>res.send(response))
+    .catch(err=>console.log(err))
+
+})
 module.exports = router;
