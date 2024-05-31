@@ -7,7 +7,7 @@
     width: 300px;
     height: 200px;
     /* border: 1px solid black; */
-    background-color: rgb(167, 255, 226);
+    background-color: rgb(228, 228, 228);
     /* margin-right: 10px; */
     text-align: center;
     border-radius: 20px;
@@ -15,14 +15,39 @@
     padding-top: 10px;
     margin-left: 30px;
     margin-top: 10px;
+    color: rgb(99, 10, 10);
 
 }
 #remove-btn{
-    background-color: red;
-    color: white;
-    border: 1px solid rgb(161, 0, 0);
+    background-color: rgb(133, 133, 133);
+    color: rgb(0, 0, 0);
+    border: 1px solid rgb(0, 0, 0);
     border-radius: 20px;
     padding: 3px;
     font-size: 15px;
     box-shadow: 1px 1px 4px black;
+}
+nav{
+    background-color: rgb(196, 196, 196);
+    height: 50px;
+}
+nav ul{
+    display:flex;
+    gap: 20px;
+    list-style: none;
+    
+}
+
+nav ul li{
+    text-decoration: none;
+    font-size: 20px;
+    color: red;
+    font-family: 'Franklin Gothic', 'Arial Narrow', Arial, sans-serif;
+    /* background-color: rgb(255, 255, 255); */
+    margin-top: 15px;
+
+   &:hover{
+    color: black;
+    background-color: antiquewhite;
+   }
 }

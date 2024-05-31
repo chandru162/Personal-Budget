@@ -61,11 +61,12 @@ router.get('/get', (req, res) => {
     usermodel.find()
         .then(users => res.send(users))
         .catch(err => console.log(err));
+        
 });
 
-router.delete('/delete/:email',(req,res)=>{
-    // console.log(req.params.email)
-    usermodel.findOne({email})
+router.delete('/delete/:_id',(req,res)=>{
+    // console.log(req.body)
+    usermodel.findByIdAndDelete(req.params._id)
     .then(response=>res.send(response))
     .catch(err=>console.log(err))
 
