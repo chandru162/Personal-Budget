@@ -1,24 +1,25 @@
 nav a{
     /* font-size: 40px; */
     border-radius: 40px;
-    font-size: 20px !important;
+    font-size: 21px !important;
     margin-left: 10px;
     text-decoration: none;
-    color: black !important;
+    color: rgb(20, 20, 20) !important;
 }
 nav a.active{
     color: rgb(255, 255, 255) !important;
-    background-color: rgb(136, 136, 136);
-    box-shadow: 1px 1px 6px inset rgb(0, 0, 0);
+    background-color: rgb(91, 211, 21);
+    box-shadow: 1px 1px 6px inset rgb(4, 119, 0);
     
 }
 .nav-div{
     /* width: 98%; */
     position: fixed;
-    background-color: rgb(228, 228, 228);
+    /* background-color: rgb(151, 151, 151); */
+    backdrop-filter: blur(5px);
     z-index: 1;
-    border-radius: 20px;
-    box-shadow: 1px 1px 6px rgb(131, 131, 131);
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px rgb(170, 170, 170);
     text-align: center;
     margin: 0;
     left: 0;

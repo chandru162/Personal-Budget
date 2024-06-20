@@ -1,8 +1,33 @@
-#calcu-parant{
+#calcu-parant {
     display: flex;
     flex-direction: row;
     position: relative;
     top: 90px;
     gap: 10px;
     left: 5%;
+}
+
+/* For screens that are 768px wide or less */
+@media (max-width: 768px) {
+    #calcu-parant {
+        flex-direction: column;
+        top: 60px;
+        /* Adjust top positioning if needed */
+        gap: 20px;
+        /* Increase gap for better spacing on smaller screens */
+        left: 0;
+        /* Adjust left positioning to center align if needed */
+    }
+}
+
+/* For screens that are 480px wide or less */
+@media (max-width: 480px) {
+    #calcu-parant {
+        top: 40px;
+        /* Further adjust top positioning for very small screens */
+        gap: 15px;
+        /* Adjust gap for better spacing on very small screens */
+        padding: 0 10px;
+        /* Add padding to prevent elements from touching the edges */
+    }
 }

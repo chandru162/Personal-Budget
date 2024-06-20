@@ -21,7 +21,7 @@ const CurrencyConverter = () => {
 
     return (
         <>
-        <Calculater/>
+
         <div className="currency-converter">
 
             <h2>Currency Converter</h2>

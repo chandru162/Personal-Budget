@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import '../css section/Emicalculater.css';
-import Calculater from './Calculater';
 
 const EmiCalculator = () => {
   const [principal, setPrincipal] = useState('');
@@ -9,7 +8,6 @@ const EmiCalculator = () => {
   const [emi, setEmi] = useState('');
 
   const calculateEMI = () => {
-    // Formula to calculate EMI
     const p = parseFloat(principal);
     const r = parseFloat(interestRate) / 12 / 100;
     const n = parseFloat(tenure);
@@ -19,7 +17,7 @@ const EmiCalculator = () => {
 
   return (
     <>
-    <Calculater></Calculater>
+
     <div className="emi-calculator">
       <h2>EMI Calculator</h2>
       <div>

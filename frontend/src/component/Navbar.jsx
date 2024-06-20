@@ -22,8 +22,8 @@ export default function Navbar() {
                             <NavLink className="nav-link" to="/">Home</NavLink>
                             <NavLink className="nav-link" to="/about">About</NavLink>
                             <NavLink className="nav-link" to="/income-managment">Managment</NavLink>
-                            <NavLink className="nav-link" to="/calculater">calculater</NavLink>
-                            <NavLink className="nav-link" to="/tips">Tips&Triks</NavLink>
+                            <NavLink className="nav-link" to="/calculater">calculator</NavLink>
+                            <NavLink className="nav-link" to="/tips">Tips&Tricks</NavLink>
 
                             {/* <NavLink className="nav-link" to="/profile">Profile</NavLink> */}
                             {/* <NavLink className="nav-link" to="/log-in">login</NavLink> */}

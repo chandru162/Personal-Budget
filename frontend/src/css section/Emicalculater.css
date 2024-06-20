@@ -4,17 +4,17 @@
     padding: 20px;
     width: 300px;
     position: relative;
-    top: 100px;
-    left: 50%; 
+    top: 45px;
+    left: 9%; 
     transform: translateX(-50%);
     background-color: #f9f9f9; 
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); 
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
 .emi-calculator label {
     margin-bottom: 8px; 
     display: block;
-    font-weight: bold; 
+    font-weight: bold;
 }
 
 .emi-calculator input {

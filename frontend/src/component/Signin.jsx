@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import '../css section/SignInForm.css';
 import Axios from 'axios'
+import { useNavigate } from 'react-router-dom';
+
 
 
 const Signin = () => {
@@ -8,7 +10,7 @@ const Signin = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [confirmPassword, setConfirmPassword] = useState('');
-    // const [list, setList] = useState([])
+    const Navigate=useNavigate()
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -18,7 +20,6 @@ const Signin = () => {
             return;
         }
 
-        // Corrected Axios post URL and data structure
         const formdata={
             name: name,
             email: email,
@@ -30,6 +31,7 @@ const Signin = () => {
             console.log(res)
             alert(`Sign in successfully! Welcome ${name}`);
         })
+        Navigate('/log-in')
         .catch(err => {
             console.log(err);
             alert('Failed to sign in. Please try again.');

@@ -1,4 +1,4 @@
-import profileImage from '../assets/images/homeimg1.jpg'; 
+import profileImage from '../assets/images/profileimage2.jpg'; 
 import '../css section/Profile.css';
 import { NavLink, Navigate, useNavigate } from 'react-router-dom'
 import { useAuth } from './Auth'
@@ -36,7 +36,7 @@ export default function Profile(props) {
           <img src={profileImage} alt="Profile" className="profile-image" />
           <div className="profile-info">
           <h3>Welcome "{Auth.user}"</h3>
-          <p>Email: {Auth.email}</p>
+          
           </div>
         </div>
         <div className="budget-details">

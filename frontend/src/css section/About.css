@@ -1,39 +1,16 @@
-/* About.css */
-
-/* .about-container {
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 20px;
-    position: relative;
-    top: 100px;
-    box-shadow: 1px 1px 6px black;
-    background-color: antiquewhite;
-    height: 500px;
-  }
-  
-  .about-container h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
-  
-  .about-container p {
-    font-size: 16px;
-    line-height: 1.5;
-  }
-   */
-
      .aboutus-container {
        padding: 20px;
        max-width: 800px;
        margin: 0 auto;
        position: relative;
        top: 100px;
-       border: 3px solid rgb(102, 99, 255);
+       border: 3px solid rgb(72, 125, 240);
        border-radius: 40px;
      }
   
      .aboutus-content {
        margin-bottom: 40px;
+       color:rgb(85, 77, 77);
      }
   
      .aboutus-content h1 {
@@ -48,7 +25,7 @@
        background-color: #f9f9f9;
        padding: 20px;
        border-radius: 8px;
-       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+       box-shadow: 1px 1px 10px rgb(133, 133, 133);
      }
   
      .contact-form h2 {

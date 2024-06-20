@@ -7,15 +7,11 @@ export default function Ocalculater() {
 
     const [input,setinput]=useState('')
 
-     
-
-
   return (
     <>
-    <Calculater></Calculater>
     
     <div className='calbody'>
-        <h1>Calculater</h1>
+        <h1>Calculator</h1>
       <input type="text" value={input}/>
       <br />
       <br />

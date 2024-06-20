@@ -5,14 +5,14 @@ export default function Tips() {
     <div>
       <div className="referenced-books">
         <h2>Referenced Books</h2>
-        <h3>All free books avilable!</h3>
+        <h3>Free books avilable!</h3>
         <div className="book">
           <img src="https://www.nypl.org/scout/_next/image?url=https%3A%2F%2Fcontentcafecloud.baker-taylor.com%2FJacket.svc%2F687E8C19-A3BC-4C42-8417-3550389695CF%2F9780143136255%2FLarge%2FLogo&w=128&q=75" alt="Book 1" className="book-image"/>
             <div className="book-details">
-              <h3>Finance for the pepople</h3>
+              <h3>Finance for the people</h3>
             <p>Author:Paco de Leon</p>
               <p>Published: January 1, 2024</p>
-              <a href="">open now</a>
+            <a href="https://thehellyeahgroup.com/finance-for-the-people">open now</a>
             </div>
         </div>
         <div className="book">
@@ -21,7 +21,7 @@ export default function Tips() {
             <h3>Ask questions, save money, make more </h3>
             <p>Author: Matt Schulz</p>
               <p>Published: February 1, 2024</p>
-            <a href="">open now</a>
+            <a href="https://www.goodreads.com/book/show/150778733-ask-questions-save-money-make-more">open now</a>
             </div>
         </div>
       </div>
@@ -32,7 +32,7 @@ export default function Tips() {
             <h3>The Social Justice Investor</h3>
             <p>Author:Andrea Longton</p>
             <p>Published: January 8, 2024</p>
-            <a href="">open now</a>
+            <a href="https://www.thesocialjusticeinvestor.com/">open now</a>
           </div>
         </div>
         <div className="book">
@@ -41,7 +41,7 @@ export default function Tips() {
             <h3>How to mony</h3>
             <p>Author: Matt Schulz</p>
             <p>Published: February 16, 2024</p>
-            <a href="">open now</a>
+            <a href="https://www.howtomoney.com/">open now</a>
           </div>
         </div>
       </div>

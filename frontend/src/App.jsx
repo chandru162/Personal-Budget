@@ -29,11 +29,11 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/income-managment" element={<RequirdAuth><Managment /></RequirdAuth>} />
 
-        <Route path="/calculater" element={<RequirdAuth><Calculater /></RequirdAuth>}></Route>
+        <Route path="/calculater" element={<RequirdAuth><Calculater /></RequirdAuth>}>
           <Route path='ordinary-calculator' element={<Ocalculator />} />
           <Route path='emi-calculator' element={<EmiCalculator />} />
           <Route path='currency-converter' element={<CurencyConverter />}  />
-
+        </Route>
           
         <Route path="/tips" element={<RequirdAuth><Tips /></RequirdAuth>} />
         <Route path="/profile" element={<Profile />} />
