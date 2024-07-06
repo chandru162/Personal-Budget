@@ -26,7 +26,7 @@ const Signin = () => {
             password: password
 
         }
-        Axios.post('http://localhost:3005/userdetails/post', formdata)
+        Axios.post('http://localhost:3005/user/post', formdata)
         .then(res => {
             console.log(res)
             alert(`Sign in successfully! Welcome ${name}`);

@@ -1,6 +1,6 @@
-import React from 'react'
+
 import Axios from 'axios'
-import { Link, NavLink, useNavigate } from 'react-router-dom' 
+import {NavLink, useNavigate } from 'react-router-dom' 
 import { useState } from 'react'
 import { useAuth } from "./Auth";
 
@@ -17,14 +17,14 @@ export default function Login() {
 
     const handleLogin = (e) => {
         e.preventDefault()
-        Axios.get(`http://localhost:3005/userdetails/get/${email}`)
+        Axios.get(`http://localhost:3005/user/get/${email}`)
             .then(res => {
                 console.log(res)
                 if (res.data[0]?.email) {
                     if (res.data[0]?.password === password) {
                         setMessage('')
 
-                        auth.login(res.data[0]?.name)
+                        auth.login(res.data[0]?.name,email)
                         // auth.login(res.data[0]?.email)
                         alert('Login successful')
                        Navigate("/profile")

@@ -1,27 +1,4 @@
-/* .start-div{
-    width: 600px;
-    height: 500px;
-    border: 1px solid black;
-    position: relative;
-    left: 60%;
-    top: -500px;
-}
 
-
-.carouselExampleSlidesOnly{
-    position: relative;
-    top: -100px;
-    margin-top: 700px;
-}
-
-.home-body{
-    width: 100vw;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-} */
-
-/* //////////////////////////////////////////////// */
 .home-body {
     display: flex;
     flex-direction: column;
@@ -51,3 +28,21 @@
 .card {
     width: 100%;
 }
+
+.imagediv4{
+    height: 300px;
+    display: flex;
+    flex-direction:row;
+    /* border: 1px solid black; */
+    width: 100%;
+    margin-top: 50px;
+    
+}
+.imagediv4 div{
+    border: 1px solid black;
+    border-radius: 50%;
+    width: 300px;
+    margin-left: 20px;
+}
+
+

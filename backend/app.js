@@ -1,12 +1,12 @@
 const express=require('express')
 const app=express()
 require('dotenv').config()
-const user = require('./router/user.js')
+const user1 = require('./router/user.js')
+const history = require('./router/history.js')
 const mongodb = require('./config/db.js')
 const port = process.env.PORT
 const cors = require('cors')
 const bodyParser = require('body-parser')
-const usermodel=require('../backend/models/user_models.js')
 app.use(cors())
 app.use(bodyParser.json())
 // app.use('/auth',user)
@@ -17,8 +17,9 @@ app.get('/',(req,res)=>{
 
 })
 
-app.use('/userdetails',user)
+app.use('/user',user1)
+app.use('/history',history)
 
 app.listen(port,()=>{
-    console.log(`server is running on port ${port}`) 
+    console.log(`server is running on port ${port}`)
 })

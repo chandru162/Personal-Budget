@@ -31,6 +31,24 @@ export default function Home() {
           <span className="visually-hidden">Next</span>
         </button> */}
       </div>
+      <div className='imagediv4'>
+        <div>
+          <img src="..." alt="img1" />
+        </div>
+        <div>
+          <img src="..." alt="img2" />
+        </div>
+        <div>
+          <img src="..." alt="img3" />
+        </div>
+        <div>
+          <img src="..." alt="img4" />
+        </div>
+      </div>
+      <div className='animationdiv'>
+        
+
+      </div>
 
       <div className='start-div'>
         <div className="card text-center h-100">
@@ -41,6 +59,8 @@ export default function Home() {
           </div>
         </div>
       </div>
+      
+
 
     </div>
   )

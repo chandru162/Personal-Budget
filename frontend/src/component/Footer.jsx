@@ -15,7 +15,7 @@ export default function Footer() {
             <ul className="list-unstyled">
               <li><a href="/home" className="text-white">Home</a></li>
               <li><a href="/profile" className="text-white">Profile</a></li>
-              <li><a href="/contact" className="text-white">Contact</a></li>
+              <li><a href="/managment" className="text-white">Contact</a></li>
               <li><a href="/about" className="text-white">About</a></li>
             </ul>
           </div>

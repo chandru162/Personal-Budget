@@ -1,27 +1,3 @@
-// const express=require('express')
-// const bodyParser=require('body-parser')
-// const usermodle=require('../modles/user_models')
-// var router=express.Router()
-
-
-
-// router.use(bodyParser.json())
-
-// router.get('/',(req,res)=>{
-//     res.send('user page')
-// })
-
-
-// router.post('/post',(req,res)=>{
-//     console.log(req.body)
-//     const newuser=new usermodle(req.body)
-//     newuser.save()
-//     .then(responce=>console.log(responce))
-//     .catch(err=>console.log(err))
-//     res.send("user posting page")
-// })
-
-/////////////////////////
 
 const express = require('express');
 const bodyParser = require('body-parser');
@@ -49,14 +25,14 @@ router.post('/post', (req, res) => {
 });
 
 router.get('/get/:email',(req,res)=>{
-    console.log(req.params.email)
+    // console.log(req.params.email)
     usermodel.find({email:req.params.email})
     .then(response=>res.send(response))
     .catch(err=>console.log(err))
     
 })
 
-router.get('/get', (req, res) => {
+router.get('/get', (req,res) => {
     // console.log(req.body);
     usermodel.find()
         .then(users => res.send(users))

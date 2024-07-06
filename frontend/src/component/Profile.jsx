@@ -1,12 +1,12 @@
 import profileImage from '../assets/images/profileimage2.jpg'; 
 import '../css section/Profile.css';
-import { NavLink, Navigate, useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import { useAuth } from './Auth'
 
   
 
 
-export default function Profile(props) {
+export default function Profile() {
   const Auth=useAuth()
 
   const Navigate=useNavigate()
@@ -36,6 +36,7 @@ export default function Profile(props) {
           <img src={profileImage} alt="Profile" className="profile-image" />
           <div className="profile-info">
           <h3>Welcome "{Auth.user}"</h3>
+          <h5>Email : {Auth.email}</h5>
           
           </div>
         </div>
