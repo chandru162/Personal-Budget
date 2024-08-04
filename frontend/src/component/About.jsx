@@ -1,5 +1,6 @@
 import  { useState } from 'react';
 import '../css section/About.css';
+import Axios from 'axios'
 
 export default function About() {
   const [formData, setFormData] = useState({
@@ -18,6 +19,9 @@ export default function About() {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log('Form submitted:', formData);
+    Axios.post('http://localhost:3005/utoamail/post',formData)
+    .then(res=>console.log(res.data))
+    .catch(err=>console.log(err))
     alert("Send Successfully !")
   };
 

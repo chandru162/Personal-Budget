@@ -1,0 +1,29 @@
+table{
+    border: 1px solid black;
+    text-align: center;
+    width: 100%;
+    /* background-color: rgb(192, 197, 180); */
+    box-shadow: 1px 1px 10px black ;
+}
+th{
+    border: 1px solid black;
+    background-color: yellow;
+}
+td{
+    border: 1px solid black;
+    background-color: rgb(123, 240, 255);
+    color:black;
+    font-size: larger;
+}
+.hisdiv{
+    position: relative;
+    left: 0px;
+    top: 100px;
+}
+
+td .dbutton{
+    background-color: red;
+}
+td .ubutton{
+    background-color:rgb(26, 179, 12);
+}

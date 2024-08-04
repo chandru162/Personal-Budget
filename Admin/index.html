@@ -4,10 +4,54 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React</title>
+    <title>Pessonal Budget</title>
   </head>
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+    <div id="root">
+      <div class="loader"></div>
+    </div>
+
+    <style>
+       .loader{
+            position: fixed;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgb(255, 255, 255);
+            transition: 1s,1s; 
+        }
+        .loader-hidden{
+            opacity: 0;
+            visibility: hidden;
+        }
+        .loader::before{
+            content: "";
+            width: 30px;
+            height: 30px;
+            border: 3px solid #0059ff;
+            border-top-color:#ffffff ;
+            border-radius: 100%;
+            /* box-shadow: 0px 10px 10px rgb(60, 64, 255); */
+            animation: loading 0.90s linear infinite;
+        }
+
+        @keyframes loading{
+            0%{transform: rotate(0deg);}            
+            100%{transform: rotate(360deg);}
+        }
+    </style>
+    <script type="module" src="/src/main.jsx">
+
+          window.addEventListener('load', () =>{
+              const loader = document.querySelector('.loader')
+              loader.classList.add('loader-hidden')
+              loader.addEventListener('trasitionend', () => {
+                document.body.removeChild('loader')
+              })
+            })
+            
+    </script>
   </body>
 </html>

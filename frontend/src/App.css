@@ -3,4 +3,7 @@
 
 body{
     background-color: white;
+    /* border: 10px solid rgb(15, 241, 15); */
+    border-radius: 1%;
+    /* height: 1in; */
 }

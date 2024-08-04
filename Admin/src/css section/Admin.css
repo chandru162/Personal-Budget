@@ -56,3 +56,25 @@ nav ul li{
     background-color: antiquewhite;
    }
 }
+
+.user-cards2{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.card-2 {
+    width: 100%;
+    height: 200px;
+    /* border: 1px solid black; */
+    background-color: rgb(255, 218, 9);
+    /* margin-right: 10px; */
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 1px 1px 4px black;
+    padding-top: 10px;
+    /* margin-left: 30px; */
+    margin-top: 10px;
+    color: rgb(99, 10, 10);
+
+}

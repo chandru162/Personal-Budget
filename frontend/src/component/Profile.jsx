@@ -35,7 +35,7 @@ export default function Profile() {
         <div className="profile-header">
           <img src={profileImage} alt="Profile" className="profile-image" />
           <div className="profile-info">
-          <h3>Welcome "{Auth.user}"</h3>
+          <h3>{Auth.user}</h3>
           <h5>Email : {Auth.email}</h5>
           
           </div>

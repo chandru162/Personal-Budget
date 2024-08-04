@@ -1,20 +1,19 @@
 const mongoose=require('mongoose')
 
-const userhistory=new mongoose.Schema({
+const usermail = new mongoose.Schema({
+    name:{
+        type:String,
+        required:true
+    },
     email:{
         type:String,
         required:true
     },
-    purpose:{
-        type:String,
-        required:true
-    },
-    expence:{
+    message:{
         type:String,
         required:true
     }
-
 })
 
-const historymodle=mongoose.model('expencehistory',userhistory)
-module.exports=historymodle;
+const usermailmodel = new mongoose.model('UtoAmail', usermail)
+module.exports=usermailmodel

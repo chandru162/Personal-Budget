@@ -15,12 +15,12 @@ router.post('/post',(req,res)=>{
    res.send("post page")
    const history = new historymodle(req.body);
    history.save()
-   console.log(req.body)
+   console.log(req.body) 
 
 });
 router.get('/get/:email',(req,res) => {
    // res.send("get page")
-   historymodle.findOne({ email: req.params.email })
+   historymodle.find({ email: req.params.email })
       .then(responce => res.send(responce))
       .catch(error => res.send(error))
 

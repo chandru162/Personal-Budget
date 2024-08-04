@@ -1,0 +1,30 @@
+ /* .loader {
+     position: fixed;
+     width: 100vw;
+     height: 100vh;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     background-color: rgb(236, 236, 236);
+     transition: 1s, 1s;
+ }
+
+ .loader-hidden {
+     opacity: 0;
+     visibility: hidden;
+ }
+
+ .loader::before {
+     content: "";
+     width: 75px;
+     height: 75px;
+     border: 5px solid #000000;
+     border-top-color: #ffffff;
+     border-radius: 50%;
+     animation: loading 0.80s linear infinite;
+ }
+
+    @keyframes loading {
+     0% {transform: rotate(0deg);}
+     100% {transform: rotate(360deg);}
+    } */
