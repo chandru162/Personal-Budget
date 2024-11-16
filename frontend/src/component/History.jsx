@@ -22,17 +22,17 @@ export default function History() {
       <table>
         <thead>
           <tr>
-            {/* <th>Email:</th> */}
+            <th>Email:</th>
             <th>Purpose:</th>
             <th>Expence:</th>
             <th>Update the list:</th>
-            <th>Remove the list</th>
+            <th>Remove the list</th>  
           </tr>
         </thead>
           {list.map((x)=>(
             <tbody key={x._id}>
               <tr>
-                {/* <td>{x.email}</td> */}
+                <td>{x.email}</td>
                 <td>{x.purpose}</td>
                 <td>{x.expence}</td>
                 <td><button className='ubutton'>update</button></td>
